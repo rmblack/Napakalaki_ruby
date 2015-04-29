@@ -1,13 +1,20 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
+#encoding: UTF-8
 
 class Monster
-  def initialize
-    @name = "Grunt#4"
-    @combatLevel = "level1"
-    @prize
-    @badJuju
+  # Attributes
+  def initialize (name, combatLevel, prize, badJuju)
+    @name = name
+    @combatLevel = combatLevel
+    @prize = prize
+    @badJuju = badJuju
   end
-  attr_accessor :name, :conbatLevel, :prize, :badJuju
+  
+  attr_accessor :name, :combatLevel, :prize, :badJuju
+  
+  # Functions
+  def to_s
+    "Name = \"#{name}\"\nCombat Level = #{combatLevel}" + 
+     "\nPrize: " + prize.to_s() + "\nBad Juju: " + badJuju.to_s()
+    
+  end
 end

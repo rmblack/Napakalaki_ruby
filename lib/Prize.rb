@@ -1,18 +1,22 @@
-# To change this license header, choose License Headers in Project Properties.
-# To change this template file, choose Tools | Templates
-# and open the template in the editor.
-
+#encoding: UTF-8
 
 class Prize
+  
   def initialize (treasures, levels)
     @treasures = treasures
     @levels = levels
-  end 
+  end
   # def levels
   #   @levels
   # end
   # def treasures
   #   @treasures
   # end
+  
   attr_accessor :treasures, :levels
+  
+  def to_s
+    "Treasures = #{treasures} Levels = #{levels}" #Debug_1: must be similar to java version
+  end
+
 end
